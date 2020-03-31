@@ -19,9 +19,7 @@ public final class KeychainService {
     
     public init() {}
     
-    func get(for key: KeychainKey) -> String? {
-        return keychain[string: key.rawValue]
-    }
+    func get(for key: KeychainKey) -> String? { keychain[string: key.rawValue] }
     
     func save(value: String?, for key: KeychainKey) {
         keychain[string: key.rawValue] = value

@@ -46,6 +46,16 @@
 		88F5F1D924332CEA009B3BAE /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1D324332CEA009B3BAE /* UserSession.swift */; };
 		88F5F1DA24332CEA009B3BAE /* SessionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1D424332CEA009B3BAE /* SessionInfo.swift */; };
 		88F5F1DB24332CEA009B3BAE /* TokensStoragable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1D524332CEA009B3BAE /* TokensStoragable.swift */; };
+		88F5F1DE2433338B009B3BAE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1DC2433338B009B3BAE /* AuthViewController.swift */; };
+		88F5F1DF2433338B009B3BAE /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1DD2433338B009B3BAE /* AuthModel.swift */; };
+		88F5F1E124333401009B3BAE /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1E024333401009B3BAE /* AuthView.swift */; };
+		88F5F1E4243339E8009B3BAE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1E3243339E8009B3BAE /* Alert.swift */; };
+		88F5F1E624333A03009B3BAE /* ApplicationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1E524333A03009B3BAE /* ApplicationAlert.swift */; };
+		88F5F1E824333A5E009B3BAE /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1E724333A5D009B3BAE /* Spinner.swift */; };
+		88F5F1EA24333A6B009B3BAE /* SpinnerPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1E924333A6B009B3BAE /* SpinnerPresentable.swift */; };
+		88F5F1EC24333A81009B3BAE /* ApplicationSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1EB24333A81009B3BAE /* ApplicationSpinner.swift */; };
+		88F5F1EF24333D3B009B3BAE /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1EE24333D3B009B3BAE /* AlertPresentable.swift */; };
+		88F5F1F124334194009B3BAE /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1F024334194009B3BAE /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +136,16 @@
 		88F5F1D324332CEA009B3BAE /* UserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		88F5F1D424332CEA009B3BAE /* SessionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionInfo.swift; sourceTree = "<group>"; };
 		88F5F1D524332CEA009B3BAE /* TokensStoragable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensStoragable.swift; sourceTree = "<group>"; };
+		88F5F1DC2433338B009B3BAE /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		88F5F1DD2433338B009B3BAE /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		88F5F1E024333401009B3BAE /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		88F5F1E3243339E8009B3BAE /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		88F5F1E524333A03009B3BAE /* ApplicationAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAlert.swift; sourceTree = "<group>"; };
+		88F5F1E724333A5D009B3BAE /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		88F5F1E924333A6B009B3BAE /* SpinnerPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerPresentable.swift; sourceTree = "<group>"; };
+		88F5F1EB24333A81009B3BAE /* ApplicationSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationSpinner.swift; sourceTree = "<group>"; };
+		88F5F1EE24333D3B009B3BAE /* AlertPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
+		88F5F1F024334194009B3BAE /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		C959E80C2FFD18E761F4F1CE /* Pods-Shared-NebulaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-NebulaTest.debug.xcconfig"; path = "Target Support Files/Pods-Shared-NebulaTest/Pods-Shared-NebulaTest.debug.xcconfig"; sourceTree = "<group>"; };
 		EE772FAF108B3354597C0F85 /* Pods-Shared-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-Core.release.xcconfig"; path = "Target Support Files/Pods-Shared-Core/Pods-Shared-Core.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -232,6 +252,7 @@
 		88F5F19724332928009B3BAE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				88F5F1E2243339DC009B3BAE /* HUDs */,
 				88F5F19A24332955009B3BAE /* Navigation */,
 				88F5F19F24332975009B3BAE /* ApplicationServices */,
 				88F5F19824332946009B3BAE /* NiblessController.swift */,
@@ -275,6 +296,8 @@
 			isa = PBXGroup;
 			children = (
 				88F5F1B424332B4E009B3BAE /* FlowCore */,
+				88F5F1DC2433338B009B3BAE /* AuthViewController.swift */,
+				88F5F1DD2433338B009B3BAE /* AuthModel.swift */,
 			);
 			path = AuthFlow;
 			sourceTree = "<group>";
@@ -308,6 +331,7 @@
 		88F5F1BB24332BD7009B3BAE /* BaseViews */ = {
 			isa = PBXGroup;
 			children = (
+				88F5F1E024333401009B3BAE /* AuthView.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -348,8 +372,22 @@
 			isa = PBXGroup;
 			children = (
 				88F5F1CE24332CBD009B3BAE /* KeychainService.swift */,
+				88F5F1F024334194009B3BAE /* UserService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		88F5F1E2243339DC009B3BAE /* HUDs */ = {
+			isa = PBXGroup;
+			children = (
+				88F5F1E3243339E8009B3BAE /* Alert.swift */,
+				88F5F1E524333A03009B3BAE /* ApplicationAlert.swift */,
+				88F5F1E724333A5D009B3BAE /* Spinner.swift */,
+				88F5F1E924333A6B009B3BAE /* SpinnerPresentable.swift */,
+				88F5F1EB24333A81009B3BAE /* ApplicationSpinner.swift */,
+				88F5F1EE24333D3B009B3BAE /* AlertPresentable.swift */,
+			);
+			path = HUDs;
 			sourceTree = "<group>";
 		};
 		912F34B8D1002CD0213F2BE7 /* Pods */ = {
@@ -397,6 +435,7 @@
 				88F5F15B243322DF009B3BAE /* Resources */,
 				88F5F182243327DE009B3BAE /* Embed Frameworks */,
 				A90D0BF44AA9A956F085F3E4 /* [CP] Embed Pods Frameworks */,
+				88F5F1ED24333B81009B3BAE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -538,6 +577,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		88F5F1ED24333B81009B3BAE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/scripts/run-swiftlint.sh\n";
+		};
 		A90D0BF44AA9A956F085F3E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -606,21 +662,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F5F1E4243339E8009B3BAE /* Alert.swift in Sources */,
 				88F5F1A5243329B4009B3BAE /* HasCustomView.swift in Sources */,
 				88F5F19924332946009B3BAE /* NiblessController.swift in Sources */,
+				88F5F1EF24333D3B009B3BAE /* AlertPresentable.swift in Sources */,
 				88F5F1B824332B90009B3BAE /* MainAssembly.swift in Sources */,
+				88F5F1EC24333A81009B3BAE /* ApplicationSpinner.swift in Sources */,
 				88F5F1A324332991009B3BAE /* CoordinatorApplicationService.swift in Sources */,
+				88F5F1DE2433338B009B3BAE /* AuthViewController.swift in Sources */,
+				88F5F1EA24333A6B009B3BAE /* SpinnerPresentable.swift in Sources */,
 				88F5F1B224332B40009B3BAE /* AuthAssembly.swift in Sources */,
 				88F5F19E24332963009B3BAE /* Coordinator.swift in Sources */,
 				88F5F1AC24332A33009B3BAE /* ApplicationFlowCoordinator.swift in Sources */,
 				88F5F1AB24332A33009B3BAE /* ApplicationFlowStrategy.swift in Sources */,
 				88F5F1B924332B90009B3BAE /* MainFlowCoordinator.swift in Sources */,
+				88F5F1DF2433338B009B3BAE /* AuthModel.swift in Sources */,
 				88F5F1AA24332A33009B3BAE /* ApplicationFlowAssembly.swift in Sources */,
 				88F5F1AE24332B17009B3BAE /* Resolver+Autoresolve.swift in Sources */,
 				88F5F1B324332B40009B3BAE /* AuthFlowCoordinator.swift in Sources */,
 				88F5F19D24332963009B3BAE /* EventNode.swift in Sources */,
 				88F5F1A12433298A009B3BAE /* ApplicationServicesManager.swift in Sources */,
 				88F5F161243322DF009B3BAE /* AppDelegate.swift in Sources */,
+				88F5F1E624333A03009B3BAE /* ApplicationAlert.swift in Sources */,
+				88F5F1E824333A5E009B3BAE /* Spinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +696,7 @@
 				88F5F1DB24332CEA009B3BAE /* TokensStoragable.swift in Sources */,
 				88F5F1CB24332C5F009B3BAE /* Constants.swift in Sources */,
 				88F5F1D824332CEA009B3BAE /* TokensStorage.swift in Sources */,
+				88F5F1F124334194009B3BAE /* UserService.swift in Sources */,
 				88F5F1D724332CEA009B3BAE /* UserSessionController.swift in Sources */,
 				88F5F1D924332CEA009B3BAE /* UserSession.swift in Sources */,
 				88F5F1CF24332CBD009B3BAE /* KeychainService.swift in Sources */,
@@ -642,6 +707,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F5F1E124333401009B3BAE /* AuthView.swift in Sources */,
 				88F5F1C724332C37009B3BAE /* NiblessCell.swift in Sources */,
 				88F5F1C824332C37009B3BAE /* Autolayout.swift in Sources */,
 				88F5F1C224332C11009B3BAE /* UICollectionView+Reusable.swift in Sources */,

@@ -14,7 +14,7 @@ open class PluggableApplicationDelegate: UIResponder, UIApplicationDelegate {
     
     public var window: UIWindow?
     
-    open var services: [ApplicationService] { return [] }
+    open var services: [ApplicationService] { [] }
     // swiftlint:disable identifier_name
     private lazy var __services: [ApplicationService] = {
         self.services

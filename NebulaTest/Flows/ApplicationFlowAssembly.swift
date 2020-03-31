@@ -33,6 +33,10 @@ final class ApplicationFlowAssembly: Assembly {
             return controller.userSession
         }.inObjectScope(.container)
         
+        container.register(UserService.self) { resolver in
+            return UserService(userSessionController: resolver.autoresolve())
+        }.inObjectScope(.container)
+        
         container.register(ApplicationFlowStrategy.self) { resolver in
             ApplicationFlowStrategy(sessionController: resolver.autoresolve())
         }.inObjectScope(.container)

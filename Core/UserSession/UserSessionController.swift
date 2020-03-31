@@ -23,7 +23,5 @@ public final class UserSessionController {
         userSession.stopSession()
     }
     
-    public func canRestorePreviousSession() -> Bool {
-        return userSession.canRestorePreviousSession()
-    }
+    public func canRestorePreviousSession() -> Bool { userSession.canRestorePreviousSession() }
 }

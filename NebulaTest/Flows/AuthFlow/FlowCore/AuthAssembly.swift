@@ -15,6 +15,9 @@ final class AuthAssembly: Assembly {
     init() {}
     
     func assemble(container: Container) {
-        
+        container.register(AuthViewController.self) { (resolver, parentNode: EventNode) in
+            let model = AuthModel(parentNode, userService: resolver.autoresolve())
+            return AuthViewController(model: model)
+        }.inObjectScope(.transient)
     }
 }

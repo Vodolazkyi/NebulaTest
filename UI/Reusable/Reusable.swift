@@ -7,7 +7,5 @@ public protocol Reusable: class {
 
 public extension Reusable {
     
-    static var reuseIdentifier: String {
-        return String(describing: self)
-    }
+    static var reuseIdentifier: String { String(describing: self) }
 }

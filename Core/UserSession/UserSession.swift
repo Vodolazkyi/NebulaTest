@@ -8,14 +8,10 @@ public final class UserSession {
     
     // MARK: - Properties.
     
-    public var state: State {
-        return _state
-    }
+    public var state: State { _state }
     
     public var sessionInvalidated: ((_ userId: Int?) -> Void)?
-    public var userId: Int? {
-        return storage.obtain()?.userId
-    }
+    public var userId: String? { storage.obtain()?.userId }
     
     private var _state: State = .initialized
     private let storage: TokensStoragable

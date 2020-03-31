@@ -31,8 +31,8 @@ final class CoordinatorApplicationService: NSObject, ApplicationService {
     func application(
         _ app: UIApplication,
         open url: URL,
-        options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        return ApplicationDelegate.shared.application(
+        options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+        ApplicationDelegate.shared.application(
             app,
             open: url,
             sourceApplication: options[.sourceApplication] as? String,

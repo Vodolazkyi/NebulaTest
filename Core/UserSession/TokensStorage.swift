@@ -17,7 +17,7 @@ public final class TokensStorage: TokensStoragable {
     
     public func obtain() -> SessionInfo? {
         guard let token = storage.get(for: .token),
-            let userId = Int(storage.get(for: .userId) ?? "") else {
+            let userId = storage.get(for: .userId) else {
                 return nil
         }
         return SessionInfo(userId: userId, token: token)

@@ -3,6 +3,7 @@ disabled_rules: # rule identifiers to exclude from running
   - trailing_whitespace
   - private_over_fileprivate
   - trailing_closure
+  - implicit_return
 opt_in_rules: # some rules are only opt-in
   - attributes
   - closure_end_indentation
@@ -11,7 +12,6 @@ opt_in_rules: # some rules are only opt-in
   - empty_string
   - explicit_init
   - first_where
-  - implicit_return
   - joined_default_parameter
   - literal_expression_end_indentation
   - operator_usage_whitespace
@@ -21,8 +21,6 @@ excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Pods
   - vendor
   - ProjectTemplates
-  - UI/Views/BodyViews
-  - PhotoPicker
 
 comma: error
 force_cast: warning

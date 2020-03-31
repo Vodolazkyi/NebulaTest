@@ -60,11 +60,11 @@ final class LayoutProxy {
     }
     
     private func property<A: LayoutAnchor>(with anchor: A, kind: LayoutProperty<A>.Kind) -> LayoutProperty<A> {
-        return LayoutProperty(anchor: anchor, kind: kind)
+        LayoutProperty(anchor: anchor, kind: kind)
     }
     
     private func attribute<D: LayoutDimension>(with dimension: D, kind: LayoutProperty<D>.Kind) -> LayoutAttribute<D> {
-        return LayoutAttribute(dimension: dimension, kind: kind)
+        LayoutAttribute(dimension: dimension, kind: kind)
     }
 }
 
@@ -314,7 +314,7 @@ final class Layout: NSObject {
 extension NSLayoutConstraint {
     
     func constraintWithMultiplier(_ multiplier: CGFloat) -> NSLayoutConstraint {
-        return NSLayoutConstraint(
+        NSLayoutConstraint(
             item: self.firstItem as Any,
             attribute: self.firstAttribute,
             relatedBy: self.relation,

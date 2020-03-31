@@ -27,20 +27,20 @@ final class AuthFlowCoordinator: EventNode {
     }
     
     private func addEventsHandlers() {
-//        addHandler { [weak self] (event: AuthFlowEvent) in
-//            guard let `self` = self else { return }
-//            
-//            switch event {
-//                
-//            }
-//        }
+        addHandler { [weak self] (event: AuthModelEvent) in
+            guard let `self` = self else { return }
+
+            switch event {
+            case .loggedIn: self.raise(event: AuthFlowEvent.complete)
+            }
+        }
     }
 }
 
 extension AuthFlowCoordinator: Coordinator {
     
     func createFlow() -> UIViewController {
-        let controller = UIViewController()
+        let controller = container.resolve(AuthViewController.self, argument: self as EventNode)!
         let navigation = UINavigationController(rootViewController: controller)
         root = navigation
         return root
