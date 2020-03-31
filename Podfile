@@ -12,6 +12,9 @@ abstract_target 'Shared' do
     # DI
     pod 'Swinject', '~> 2.0'
     pod 'SwinjectAutoregistration', '~> 2.0'
+    
+    # Auth
+    pod 'FBSDKLoginKit', '6.0.0'
 
   end
   

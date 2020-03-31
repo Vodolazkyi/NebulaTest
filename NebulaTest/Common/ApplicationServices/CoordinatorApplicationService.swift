@@ -6,6 +6,7 @@
 
 import UIKit
 import Core
+import FBSDKCoreKit
 
 final class CoordinatorApplicationService: NSObject, ApplicationService {
     
@@ -21,8 +22,21 @@ final class CoordinatorApplicationService: NSObject, ApplicationService {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         applicationFlowCoordinator.startFlow()
 
         return true
+    }
+    
+    func application(
+        _ app: UIApplication,
+        open url: URL,
+        options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return ApplicationDelegate.shared.application(
+            app,
+            open: url,
+            sourceApplication: options[.sourceApplication] as? String,
+            annotation: options[.annotation]
+        )
     }
 }
