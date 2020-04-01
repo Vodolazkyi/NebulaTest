@@ -10,7 +10,8 @@ import Foundation
 
 public struct Album: Codable {
     
+    public let id: String
     public let count: Int
     public let name: String
-    public let picture: UrlData
+    public let picture: Picture
 }

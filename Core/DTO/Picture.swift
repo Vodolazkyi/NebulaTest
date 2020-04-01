@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Picture {
+public struct Picture: Codable {
     
     public let data: UrlData
 }
