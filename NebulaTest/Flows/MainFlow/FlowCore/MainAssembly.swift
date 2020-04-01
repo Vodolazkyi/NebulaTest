@@ -31,5 +31,10 @@ final class MainAssembly: Assembly {
             let model = AlbumsListModel(parentNode, photoService: resolver.autoresolve())
             return AlbumsListViewController(model: model)
         }.inObjectScope(.transient)
+        
+        container.register(AlbumViewController.self) { (resolver, parentNode: EventNode, album: Album) in
+            let model = AlbumModel(parentNode, photoService: resolver.autoresolve(), album: album)
+            return AlbumViewController(model: model)
+        }.inObjectScope(.transient)
     }
 }

@@ -69,6 +69,11 @@
 		88F5F20B243492F0009B3BAE /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F20A243492EF009B3BAE /* DBService.swift */; };
 		88F5F2122434E57F009B3BAE /* nebulaTestCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F2102434E57F009B3BAE /* nebulaTestCoreDataModel.xcdatamodeld */; };
 		88F5F2132434E57F009B3BAE /* nebulaTestCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F2102434E57F009B3BAE /* nebulaTestCoreDataModel.xcdatamodeld */; };
+		88F5F2172434E956009B3BAE /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F2152434E956009B3BAE /* AlbumViewController.swift */; };
+		88F5F2182434E956009B3BAE /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F2162434E956009B3BAE /* AlbumModel.swift */; };
+		88F5F21A2434EA02009B3BAE /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F2192434EA02009B3BAE /* AlbumView.swift */; };
+		88F5F21C2434F2C0009B3BAE /* PhotoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F21B2434F2C0009B3BAE /* PhotoCollectionCell.swift */; };
+		88F5F21E2434F579009B3BAE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F21D2434F579009B3BAE /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +176,11 @@
 		88F5F207243481C1009B3BAE /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		88F5F20A243492EF009B3BAE /* DBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
 		88F5F2112434E57F009B3BAE /* nebulaTestCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nebulaTestCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		88F5F2152434E956009B3BAE /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		88F5F2162434E956009B3BAE /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		88F5F2192434EA02009B3BAE /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		88F5F21B2434F2C0009B3BAE /* PhotoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionCell.swift; sourceTree = "<group>"; };
+		88F5F21D2434F579009B3BAE /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		C959E80C2FFD18E761F4F1CE /* Pods-Shared-NebulaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-NebulaTest.debug.xcconfig"; path = "Target Support Files/Pods-Shared-NebulaTest/Pods-Shared-NebulaTest.debug.xcconfig"; sourceTree = "<group>"; };
 		EE772FAF108B3354597C0F85 /* Pods-Shared-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-Core.release.xcconfig"; path = "Target Support Files/Pods-Shared-Core/Pods-Shared-Core.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -344,6 +354,7 @@
 			children = (
 				88F5F1BA24332B9C009B3BAE /* FlowCore */,
 				88F5F1F22433479E009B3BAE /* AlbumsList */,
+				88F5F2142434E931009B3BAE /* Album */,
 			);
 			path = MainFlow;
 			sourceTree = "<group>";
@@ -362,6 +373,7 @@
 			children = (
 				88F5F1E024333401009B3BAE /* AuthView.swift */,
 				88F5F1F72433481E009B3BAE /* AlbumListView.swift */,
+				88F5F2192434EA02009B3BAE /* AlbumView.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -438,6 +450,7 @@
 				88F5F1FA24334B7E009B3BAE /* Album.swift */,
 				88F5F1FC24334BB8009B3BAE /* Picture.swift */,
 				88F5F1FE24334BE6009B3BAE /* UrlData.swift */,
+				88F5F21D2434F579009B3BAE /* Photo.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -446,6 +459,7 @@
 			isa = PBXGroup;
 			children = (
 				88F5F207243481C1009B3BAE /* AlbumCell.swift */,
+				88F5F21B2434F2C0009B3BAE /* PhotoCollectionCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -457,6 +471,15 @@
 				88F5F2102434E57F009B3BAE /* nebulaTestCoreDataModel.xcdatamodeld */,
 			);
 			path = DB;
+			sourceTree = "<group>";
+		};
+		88F5F2142434E931009B3BAE /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				88F5F2152434E956009B3BAE /* AlbumViewController.swift */,
+				88F5F2162434E956009B3BAE /* AlbumModel.swift */,
+			);
+			path = Album;
 			sourceTree = "<group>";
 		};
 		912F34B8D1002CD0213F2BE7 /* Pods */ = {
@@ -734,6 +757,7 @@
 				88F5F1E4243339E8009B3BAE /* Alert.swift in Sources */,
 				88F5F1A5243329B4009B3BAE /* HasCustomView.swift in Sources */,
 				88F5F19924332946009B3BAE /* NiblessController.swift in Sources */,
+				88F5F2172434E956009B3BAE /* AlbumViewController.swift in Sources */,
 				88F5F1EF24333D3B009B3BAE /* AlertPresentable.swift in Sources */,
 				88F5F1B824332B90009B3BAE /* MainAssembly.swift in Sources */,
 				88F5F1EC24333A81009B3BAE /* ApplicationSpinner.swift in Sources */,
@@ -751,6 +775,7 @@
 				88F5F1F5243347CD009B3BAE /* AlbumsListViewController.swift in Sources */,
 				88F5F1AE24332B17009B3BAE /* Resolver+Autoresolve.swift in Sources */,
 				88F5F1B324332B40009B3BAE /* AuthFlowCoordinator.swift in Sources */,
+				88F5F2182434E956009B3BAE /* AlbumModel.swift in Sources */,
 				88F5F19D24332963009B3BAE /* EventNode.swift in Sources */,
 				88F5F1A12433298A009B3BAE /* ApplicationServicesManager.swift in Sources */,
 				88F5F161243322DF009B3BAE /* AppDelegate.swift in Sources */,
@@ -774,6 +799,7 @@
 				88F5F2132434E57F009B3BAE /* nebulaTestCoreDataModel.xcdatamodeld in Sources */,
 				88F5F1FB24334B7E009B3BAE /* Album.swift in Sources */,
 				88F5F1FD24334BB8009B3BAE /* Picture.swift in Sources */,
+				88F5F21E2434F579009B3BAE /* Photo.swift in Sources */,
 				88F5F1D724332CEA009B3BAE /* UserSessionController.swift in Sources */,
 				88F5F20324347208009B3BAE /* GraphService.swift in Sources */,
 				88F5F20B243492F0009B3BAE /* DBService.swift in Sources */,
@@ -795,6 +821,8 @@
 				88F5F1C924332C37009B3BAE /* NiblessView.swift in Sources */,
 				88F5F1C124332C11009B3BAE /* Reusable.swift in Sources */,
 				88F5F1C024332C11009B3BAE /* UITableView+Reusable.swift in Sources */,
+				88F5F21C2434F2C0009B3BAE /* PhotoCollectionCell.swift in Sources */,
+				88F5F21A2434EA02009B3BAE /* AlbumView.swift in Sources */,
 				88F5F208243481C1009B3BAE /* AlbumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

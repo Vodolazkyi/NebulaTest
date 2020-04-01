@@ -10,10 +10,6 @@
 import UIKit
 import Swinject
 
-enum MainFlowEvent: Event {
-    
-}
-
 final class MainFlowCoordinator: EventNode {
     
     private let container: Container
@@ -27,13 +23,15 @@ final class MainFlowCoordinator: EventNode {
     }
     
     private func addEventsHandlers() {
-//        addHandler { [weak self] (event: MainFlowEvent) in
-//            guard let `self` = self else { return }
-//            
-//            switch event {
-//                
-//            }
-//        }
+        addHandler { [weak self] (event: AlbumsListModelEvent) in
+            guard let `self` = self else { return }
+            
+            switch event {
+            case .showAlbum(let album):
+                let controller = self.container.resolve(AlbumViewController.self, arguments: self as EventNode, album)!
+                self.root.show(controller, sender: nil)
+            }
+        }
     }
 }
 
