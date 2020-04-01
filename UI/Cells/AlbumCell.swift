@@ -47,6 +47,7 @@ public final class AlbumCell: NiblessCell {
     
     public func configure(with config: Config) {
         titleLabel.text = config.title
+        albumCoverView.kf.indicatorType = .activity
         imageTask = albumCoverView.kf.setImage(with: config.url)
     }
     

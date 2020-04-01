@@ -38,6 +38,7 @@ public final class PhotoCollectionCell: UICollectionViewCell, Reusable {
     }
     
     public func configure(with url: URL?) {
+        photoImage.kf.indicatorType = .activity
         imageTask = photoImage.kf.setImage(with: url)
     }
     

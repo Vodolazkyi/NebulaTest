@@ -36,5 +36,10 @@ final class MainAssembly: Assembly {
             let model = AlbumModel(parentNode, photoService: resolver.autoresolve(), album: album)
             return AlbumViewController(model: model)
         }.inObjectScope(.transient)
+        
+        container.register(PhotoPreviewViewController.self) { (resolver, parentNode: EventNode, photoId: String) in
+            let model = PhotoPreviewModel(parentNode, photoId: photoId, photoService: resolver.autoresolve())
+            return PhotoPreviewViewController(model: model)
+        }.inObjectScope(.transient)
     }
 }

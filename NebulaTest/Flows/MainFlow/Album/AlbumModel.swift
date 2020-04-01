@@ -9,6 +9,10 @@
 
 import Core
 
+enum AlbumModelEvent: Event {
+    case showPhotoPreview(photoId: String)
+}
+
 protocol AlbumDelegate: class {
     func dataDidChange()
     func errorDidOccur(_ error: Error)
@@ -49,5 +53,10 @@ final class AlbumModel: EventNode {
                 self?.delegate?.errorDidOccur(error)
             }
         }
+    }
+    
+    func showPhotoPreview(with index: Int) {
+        let item = photoData[index]
+        raise(event: AlbumModelEvent.showPhotoPreview(photoId: item.id))
     }
 }

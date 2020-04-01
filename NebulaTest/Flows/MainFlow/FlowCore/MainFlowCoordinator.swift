@@ -32,6 +32,16 @@ final class MainFlowCoordinator: EventNode {
                 self.root.show(controller, sender: nil)
             }
         }
+        
+        addHandler { [weak self] (event: AlbumModelEvent) in
+            guard let `self` = self else { return }
+            
+            switch event {
+            case .showPhotoPreview(let id):
+                let controller = self.container.resolve(PhotoPreviewViewController.self, arguments: self as EventNode, id)!
+                self.root.show(controller, sender: nil)
+            }
+        }
     }
 }
 

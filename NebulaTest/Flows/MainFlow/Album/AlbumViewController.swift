@@ -59,6 +59,9 @@ extension AlbumViewController: UICollectionViewDataSource {
 
 extension AlbumViewController: UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        model.showPhotoPreview(with: indexPath.row)
+    }
 }
 
 extension AlbumViewController: UICollectionViewDelegateFlowLayout {
