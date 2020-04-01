@@ -6,7 +6,6 @@
 
 import Swinject
 import Core
-import YALAPIClient
 
 final class ApplicationFlowAssembly: Assembly {
     

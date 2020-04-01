@@ -18,6 +18,8 @@ final class AuthViewController: NiblessController, HasCustomView, AlertPresentab
     
     typealias CustomView = AuthView
     
+    // MARK: - Properties
+    
     let alert = ApplicationAlert()
     
     private let loginButton: FBLoginButton = {
@@ -25,18 +27,16 @@ final class AuthViewController: NiblessController, HasCustomView, AlertPresentab
         button.permissions = fbPermissions
         return button
     }()
-    
-    // MARK: - Properties
-    
+        
     private let model: AuthModel
+    
+    // MARK: - View lifecycle
     
     init(model: AuthModel) {
         self.model = model
         
         super.init()
     }
-    
-    // MARK: - View lifecycle
     
     override func loadView() {
         let customView = CustomView()

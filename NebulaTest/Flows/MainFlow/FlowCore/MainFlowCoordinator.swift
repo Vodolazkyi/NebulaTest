@@ -27,20 +27,20 @@ final class MainFlowCoordinator: EventNode {
     }
     
     private func addEventsHandlers() {
-        addHandler { [weak self] (event: MainFlowEvent) in
-            guard let `self` = self else { return }
-            
-            switch event {
-                
-            }
-        }
+//        addHandler { [weak self] (event: MainFlowEvent) in
+//            guard let `self` = self else { return }
+//            
+//            switch event {
+//                
+//            }
+//        }
     }
 }
 
 extension MainFlowCoordinator: Coordinator {
     
     func createFlow() -> UIViewController {
-        let controller = UIViewController()
+        let controller = container.resolve(AlbumsListViewController.self, argument: self as EventNode)!
         let navigation = UINavigationController(rootViewController: controller)
         root = navigation
         return root

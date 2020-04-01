@@ -56,6 +56,13 @@
 		88F5F1EC24333A81009B3BAE /* ApplicationSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1EB24333A81009B3BAE /* ApplicationSpinner.swift */; };
 		88F5F1EF24333D3B009B3BAE /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1EE24333D3B009B3BAE /* AlertPresentable.swift */; };
 		88F5F1F124334194009B3BAE /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1F024334194009B3BAE /* UserService.swift */; };
+		88F5F1F5243347CD009B3BAE /* AlbumsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1F3243347CD009B3BAE /* AlbumsListViewController.swift */; };
+		88F5F1F6243347CD009B3BAE /* AlbumsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1F4243347CD009B3BAE /* AlbumsListModel.swift */; };
+		88F5F1F82433481E009B3BAE /* AlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1F72433481E009B3BAE /* AlbumListView.swift */; };
+		88F5F1FB24334B7E009B3BAE /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1FA24334B7E009B3BAE /* Album.swift */; };
+		88F5F1FD24334BB8009B3BAE /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1FC24334BB8009B3BAE /* Picture.swift */; };
+		88F5F1FF24334BE6009B3BAE /* UrlData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F1FE24334BE6009B3BAE /* UrlData.swift */; };
+		88F5F20124334C7E009B3BAE /* PhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F20024334C7E009B3BAE /* PhotosService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +153,13 @@
 		88F5F1EB24333A81009B3BAE /* ApplicationSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationSpinner.swift; sourceTree = "<group>"; };
 		88F5F1EE24333D3B009B3BAE /* AlertPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
 		88F5F1F024334194009B3BAE /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		88F5F1F3243347CD009B3BAE /* AlbumsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsListViewController.swift; sourceTree = "<group>"; };
+		88F5F1F4243347CD009B3BAE /* AlbumsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsListModel.swift; sourceTree = "<group>"; };
+		88F5F1F72433481E009B3BAE /* AlbumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListView.swift; sourceTree = "<group>"; };
+		88F5F1FA24334B7E009B3BAE /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		88F5F1FC24334BB8009B3BAE /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		88F5F1FE24334BE6009B3BAE /* UrlData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlData.swift; sourceTree = "<group>"; };
+		88F5F20024334C7E009B3BAE /* PhotosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosService.swift; sourceTree = "<group>"; };
 		C959E80C2FFD18E761F4F1CE /* Pods-Shared-NebulaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-NebulaTest.debug.xcconfig"; path = "Target Support Files/Pods-Shared-NebulaTest/Pods-Shared-NebulaTest.debug.xcconfig"; sourceTree = "<group>"; };
 		EE772FAF108B3354597C0F85 /* Pods-Shared-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-Core.release.xcconfig"; path = "Target Support Files/Pods-Shared-Core/Pods-Shared-Core.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,6 +245,7 @@
 				88F5F17B243327DE009B3BAE /* Core.h */,
 				88F5F17C243327DE009B3BAE /* Info.plist */,
 				88F5F1CA24332C5F009B3BAE /* Constants.swift */,
+				88F5F1F924334B6F009B3BAE /* DTO */,
 				88F5F1CD24332CA3009B3BAE /* Services */,
 				88F5F1CC24332C9A009B3BAE /* UserSession */,
 			);
@@ -315,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				88F5F1BA24332B9C009B3BAE /* FlowCore */,
+				88F5F1F22433479E009B3BAE /* AlbumsList */,
 			);
 			path = MainFlow;
 			sourceTree = "<group>";
@@ -332,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				88F5F1E024333401009B3BAE /* AuthView.swift */,
+				88F5F1F72433481E009B3BAE /* AlbumListView.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -373,6 +390,7 @@
 			children = (
 				88F5F1CE24332CBD009B3BAE /* KeychainService.swift */,
 				88F5F1F024334194009B3BAE /* UserService.swift */,
+				88F5F20024334C7E009B3BAE /* PhotosService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -388,6 +406,25 @@
 				88F5F1EE24333D3B009B3BAE /* AlertPresentable.swift */,
 			);
 			path = HUDs;
+			sourceTree = "<group>";
+		};
+		88F5F1F22433479E009B3BAE /* AlbumsList */ = {
+			isa = PBXGroup;
+			children = (
+				88F5F1F3243347CD009B3BAE /* AlbumsListViewController.swift */,
+				88F5F1F4243347CD009B3BAE /* AlbumsListModel.swift */,
+			);
+			path = AlbumsList;
+			sourceTree = "<group>";
+		};
+		88F5F1F924334B6F009B3BAE /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				88F5F1FA24334B7E009B3BAE /* Album.swift */,
+				88F5F1FC24334BB8009B3BAE /* Picture.swift */,
+				88F5F1FE24334BE6009B3BAE /* UrlData.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 		912F34B8D1002CD0213F2BE7 /* Pods */ = {
@@ -675,9 +712,11 @@
 				88F5F19E24332963009B3BAE /* Coordinator.swift in Sources */,
 				88F5F1AC24332A33009B3BAE /* ApplicationFlowCoordinator.swift in Sources */,
 				88F5F1AB24332A33009B3BAE /* ApplicationFlowStrategy.swift in Sources */,
+				88F5F1F6243347CD009B3BAE /* AlbumsListModel.swift in Sources */,
 				88F5F1B924332B90009B3BAE /* MainFlowCoordinator.swift in Sources */,
 				88F5F1DF2433338B009B3BAE /* AuthModel.swift in Sources */,
 				88F5F1AA24332A33009B3BAE /* ApplicationFlowAssembly.swift in Sources */,
+				88F5F1F5243347CD009B3BAE /* AlbumsListViewController.swift in Sources */,
 				88F5F1AE24332B17009B3BAE /* Resolver+Autoresolve.swift in Sources */,
 				88F5F1B324332B40009B3BAE /* AuthFlowCoordinator.swift in Sources */,
 				88F5F19D24332963009B3BAE /* EventNode.swift in Sources */,
@@ -695,8 +734,12 @@
 				88F5F1DA24332CEA009B3BAE /* SessionInfo.swift in Sources */,
 				88F5F1DB24332CEA009B3BAE /* TokensStoragable.swift in Sources */,
 				88F5F1CB24332C5F009B3BAE /* Constants.swift in Sources */,
+				88F5F1FF24334BE6009B3BAE /* UrlData.swift in Sources */,
+				88F5F20124334C7E009B3BAE /* PhotosService.swift in Sources */,
 				88F5F1D824332CEA009B3BAE /* TokensStorage.swift in Sources */,
 				88F5F1F124334194009B3BAE /* UserService.swift in Sources */,
+				88F5F1FB24334B7E009B3BAE /* Album.swift in Sources */,
+				88F5F1FD24334BB8009B3BAE /* Picture.swift in Sources */,
 				88F5F1D724332CEA009B3BAE /* UserSessionController.swift in Sources */,
 				88F5F1D924332CEA009B3BAE /* UserSession.swift in Sources */,
 				88F5F1CF24332CBD009B3BAE /* KeychainService.swift in Sources */,
@@ -708,6 +751,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88F5F1E124333401009B3BAE /* AuthView.swift in Sources */,
+				88F5F1F82433481E009B3BAE /* AlbumListView.swift in Sources */,
 				88F5F1C724332C37009B3BAE /* NiblessCell.swift in Sources */,
 				88F5F1C824332C37009B3BAE /* Autolayout.swift in Sources */,
 				88F5F1C224332C11009B3BAE /* UICollectionView+Reusable.swift in Sources */,

@@ -15,6 +15,9 @@ final class MainAssembly: Assembly {
     init() {}
     
     func assemble(container: Container) {
-        
+        container.register(AlbumsListViewController.self) { (_, parentNode: EventNode) in
+            let model = AlbumsListModel(parentNode)
+            return AlbumsListViewController(model: model)
+        }.inObjectScope(.transient)
     }
 }
