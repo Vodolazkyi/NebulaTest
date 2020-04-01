@@ -32,4 +32,18 @@ public class PhotoService {
             }
         }
     }
+    
+    public func obtainPhotoDataForAlbum(with id: String, completion: @escaping (Result<PhotoData, Error>) -> Void) {
+        
+        graphService.obtainPhotoDataForAlbum(with: id) { [weak self] result in
+            switch result {
+            case .success(let item):
+//                _ = self?.dbClient.saveAlbums(item.data)
+                completion(.success(item))
+
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
 }

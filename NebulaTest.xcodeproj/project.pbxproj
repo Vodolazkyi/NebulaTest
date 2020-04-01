@@ -74,6 +74,7 @@
 		88F5F21A2434EA02009B3BAE /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F2192434EA02009B3BAE /* AlbumView.swift */; };
 		88F5F21C2434F2C0009B3BAE /* PhotoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F21B2434F2C0009B3BAE /* PhotoCollectionCell.swift */; };
 		88F5F21E2434F579009B3BAE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F21D2434F579009B3BAE /* Photo.swift */; };
+		88F5F2202434F749009B3BAE /* PhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F21F2434F749009B3BAE /* PhotoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +182,7 @@
 		88F5F2192434EA02009B3BAE /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		88F5F21B2434F2C0009B3BAE /* PhotoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionCell.swift; sourceTree = "<group>"; };
 		88F5F21D2434F579009B3BAE /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		88F5F21F2434F749009B3BAE /* PhotoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoData.swift; sourceTree = "<group>"; };
 		C959E80C2FFD18E761F4F1CE /* Pods-Shared-NebulaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-NebulaTest.debug.xcconfig"; path = "Target Support Files/Pods-Shared-NebulaTest/Pods-Shared-NebulaTest.debug.xcconfig"; sourceTree = "<group>"; };
 		EE772FAF108B3354597C0F85 /* Pods-Shared-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-Core.release.xcconfig"; path = "Target Support Files/Pods-Shared-Core/Pods-Shared-Core.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -450,6 +452,7 @@
 				88F5F1FA24334B7E009B3BAE /* Album.swift */,
 				88F5F1FC24334BB8009B3BAE /* Picture.swift */,
 				88F5F1FE24334BE6009B3BAE /* UrlData.swift */,
+				88F5F21F2434F749009B3BAE /* PhotoData.swift */,
 				88F5F21D2434F579009B3BAE /* Photo.swift */,
 			);
 			path = DTO;
@@ -791,6 +794,7 @@
 			files = (
 				88F5F1DA24332CEA009B3BAE /* SessionInfo.swift in Sources */,
 				88F5F1DB24332CEA009B3BAE /* TokensStoragable.swift in Sources */,
+				88F5F2202434F749009B3BAE /* PhotoData.swift in Sources */,
 				88F5F1CB24332C5F009B3BAE /* Constants.swift in Sources */,
 				88F5F1FF24334BE6009B3BAE /* UrlData.swift in Sources */,
 				88F5F20124334C7E009B3BAE /* PhotoService.swift in Sources */,

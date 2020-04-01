@@ -40,6 +40,14 @@ final class AlbumModel: EventNode {
     }
     
     func screenLoaded() {
-
+        photoService.obtainPhotoDataForAlbum(with: album.id) { [weak self] result in
+            switch result {
+            case .success(let photoData):
+                self?.photoData = photoData.data.sorted(by: { $0.id < $1.id })
+                
+            case .failure(let error):
+                self?.delegate?.errorDidOccur(error)
+            }
+        }
     }
 }

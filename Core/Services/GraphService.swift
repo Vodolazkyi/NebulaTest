@@ -22,9 +22,7 @@ public final class GraphService {
         return decoder
     }()
     
-    public init() {
-
-    }
+    public init() {}
     
     public func obtainAlbums(completion: @escaping (Result<AlbumData, Error>) -> Void) {
         let graphRequest = GraphRequest(graphPath: "/me", parameters: ["fields": "albums.fields(count, name, picture.fields(url))"])
@@ -40,6 +38,29 @@ public final class GraphService {
                         from: JSONSerialization.data(withJSONObject: data["albums"] as Any, options: [])
                     )
                     completion(.success(albums))
+                } catch {
+                    completion(.failure(error))
+                }
+            } else {
+                completion(.failure(GraphServiceError.cantParse))
+            }
+        }
+    }
+    
+    public func obtainPhotoDataForAlbum(with id: String, completion: @escaping (Result<PhotoData, Error>) -> Void) {
+        let graphRequest = GraphRequest(graphPath: id, parameters: ["fields": "photos.fields(picture)"])
+        graphRequest.start { [weak self] _, result, error in
+            guard let `self` = self else { return }
+            
+            if let error = error {
+                completion(.failure(error))
+            } else if let data = result as? [String: Any] {
+                do {
+                    let photoData = try self.decoder.decode(
+                        PhotoData.self,
+                        from: JSONSerialization.data(withJSONObject: data["photos"] as Any, options: [])
+                    )
+                    completion(.success(photoData))
                 } catch {
                     completion(.failure(error))
                 }
